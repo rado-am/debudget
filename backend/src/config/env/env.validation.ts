@@ -7,5 +7,10 @@ export class EnvValidationSchema {
       .default('development')
       .required(),
     PORT: Joi.number().default(5000).required(),
+    POSTGRES_USER: Joi.string().required(),
+    POSTGRES_PASSWORD: Joi.string().required(),
+    POSTGRES_DB: Joi.string().required(),
+    PGADMIN_EMAIL: Joi.string().email().required(),
+    PGADMIN_PASSWORD: Joi.string().required(),
   });
 }
