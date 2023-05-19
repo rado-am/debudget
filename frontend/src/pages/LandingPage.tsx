@@ -21,6 +21,7 @@ const LandingPage: FC = () => {
       <br />
       <button onClick={() => setCurrentTheme(Theme.LIGHT)}>Light</button>
       <button onClick={() => setCurrentTheme(Theme.DARK)}>Dark</button>
+      <p>test husky</p>
     </div>
   );
 };
