@@ -5,6 +5,7 @@ import { Language, Theme } from "app/enums";
 import { useLanguage } from "app/hooks/useLanguage";
 import { useTheme } from "app/hooks/useTheme";
 import { Spinner } from "components/Spinner";
+import { PageLoader } from "routes/components/PageLoader";
 
 import styles from "./LandingPage.module.scss";
 
@@ -23,6 +24,7 @@ const LandingPage: FC = () => {
       <button onClick={() => setCurrentTheme(Theme.LIGHT)}>Light</button>
       <button onClick={() => setCurrentTheme(Theme.DARK)}>Dark</button>
       <Spinner />
+      <PageLoader />
     </div>
   );
 };
