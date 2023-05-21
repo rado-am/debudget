@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Language, Theme } from "app/enums";
 import { useLanguage } from "app/hooks/useLanguage";
 import { useTheme } from "app/hooks/useTheme";
+import { Spinner } from "components/Spinner";
 
 import styles from "./LandingPage.module.scss";
 
@@ -21,6 +22,7 @@ const LandingPage: FC = () => {
       <br />
       <button onClick={() => setCurrentTheme(Theme.LIGHT)}>Light</button>
       <button onClick={() => setCurrentTheme(Theme.DARK)}>Dark</button>
+      <Spinner />
     </div>
   );
 };
